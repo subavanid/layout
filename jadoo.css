@@ -1,0 +1,410 @@
+.jadoo-logo {
+  width: 80px;
+  height: 70px;
+}
+#navItem1 {
+  color: #323f4b;
+  font-family: "Inter";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842; 
+}
+#navItem2 {
+  color: #323f4b;
+  font-family: "Inter";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842;  
+  
+  
+}
+#navItem3 {
+  color: Inter;
+  font-family: "Roboto";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842; 
+}
+#navItem4 {
+  color: Inter;
+  font-family: "Roboto";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842; 
+}
+
+.content-spacing{
+  margin-right: 40px;
+  padding-left: 180px;
+}
+
+.travel-section-bg-container {
+  background-image: url("pics/background.jpg");
+  height: 130vh;
+  background-size: cover;
+}
+.banner-heading {
+  color: #171E4C;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 300;
+}
+.best-caption {
+  color: #DF6950;
+  font-family: "Roboto";
+  font-size: 18px;
+  /* font-weight: 300; */
+  font-weight: bold;
+}
+
+
+.para-caption{
+  color: #171E4C;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+
+
+}
+.custom-button {
+  color: white;
+  background-color: #F1A501;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 12px;
+  margin-right: 10px;
+  border-style: none;
+}
+.custom-outline-button {
+  color: #DF6950;
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  border-style: none;
+  border-width: 1px;
+  border-color: #DF6950;
+  border-radius: 8px;
+}
+
+.button{
+  color:#ddd;
+  background-color: #DF6950;
+  border-radius: none;
+}
+
+
+
+.category-section .category-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.category-section .category-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.category-section .category-card-image {
+  width: 70%;
+  height: auto;
+}
+
+.category-section .category-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.category-section .category-card-description {
+  font-size: 0.9rem;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.company-link {
+  flex: 0 0 auto; 
+}
+
+
+
+.category-section {
+  background-color: #f9fbfe;
+  text-align: center;
+}
+.category-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 700;
+}
+.category-section-description {
+  color: black;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: bolder;
+}
+.category-card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+}
+.category-card-image {
+  width: 87px;
+  height: 90px;
+}
+.category-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+}
+.category-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.offers {
+  color: #323f4b;
+  font-style: italic;
+  font-weight: 600;
+}
+.destinations-section {
+  background-color: white;
+  align-items: center;
+}
+.destinations-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.destinations-image {
+  border-radius: 16px;
+}
+.destinations-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.destinations-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.destinations-card {
+  border-radius: 16px;
+}
+/* .book-trip-section {
+  background-color: #f9fbfe;
+}
+.book-trip-img {
+  width: 270px;
+}
+.book-trip-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.book-trip-section-para{
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.book-trip-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+} */
+
+
+#booking{
+  height: 100vh;
+}
+
+.bookingrow1{
+  padding: 40px 0;
+  text-align: left;
+}
+
+.bookingrow2{
+  display: flex;
+  width: 100%;
+}
+
+.bookingcol{
+  width: 50%;
+  padding: 10px 70px;
+  
+}
+
+.bookingcont {
+  position: relative;
+  padding: 10px 0;
+}
+
+.bookingcont i{
+position: absolute;
+top: 10px;
+font-size: 50px;
+}
+
+/* .bookingcont h5,p{
+  padding:0 0 0 50px;
+} */
+
+
+.bookingcard h1{
+  font-size: 70px;
+}
+.bookingcard h1,.bookingcont{
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.bookingcard img{
+  height: 200px;
+  width:330px;
+  border-radius: 20px;
+}
+
+.bookcard2{
+  border: 1px solid rgb(238, 236, 236);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow:50px -50px 50px rgb(190, 224, 238),20px 3px 45px rgb(228, 234, 240);
+  position: relative;
+}
+
+.bookcard2 h4,h5,h6{
+  padding: 10px 0;
+}
+
+h6{
+ position: absolute;
+ top: 86%;
+ left: 90%;
+
+}
+
+
+
+/* Testimonials Section */
+#testimonals{
+  height: 100vh;
+}
+
+
+
+
+.delivery-and-payment-section {
+  background-color: white;
+}
+
+.testimonial-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.testimonial-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.testimonial-paragraph{
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+
+.logo-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.company-logo {
+  width: 200px; 
+  height: auto;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.subscribe-section{
+  background-color: #F3F2F6;
+  border-radius: 50px;
+}
+
+.subscribe-heading{
+  color: #5D6281;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+
+
+}
+
+
+.input-container {
+  position: relative;
+  width: 300px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 10px; 
+  transform: translateY(-50%);
+  width: 30px; 
+}
+
+.inside {
+  padding-left: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px; 
+  font-size: 16px; 
+  display:inline-block;
+}
+
+
+
+
+.footer-section {
+  background-color: #ffffff;
+}
+.footer-section-mail-id {
+  color: #959ead;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.footer-section-address {
+  color: #959ead;
+  font-family: "Roboto";
+  font-size: 14px;
+}

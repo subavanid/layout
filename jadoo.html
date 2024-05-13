@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jadoo.css">
+  </head>
+  <body>
+    <!-- nav bar display -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="pics/logo.png"
+            class="jadoo-logo"
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" href="#destinationsSection">
+              Destinations
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="#exploreMenuSection" id="navItem2">Hotels</a>
+            <a class="nav-link" href="#testimonialSection" id="navItem3">Flights</a>
+            <a class="nav-link" href="#logoSection" id="navItem4">Bookings</a>
+            <a class="nav-link" href="#LoginSection" id="navItem4">Login</a>
+            <a class="nav-link" href="#SignupSection" id="navItem4">Signup</a>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">French</a>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('de')">German</a>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Spanish</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- travel section -->
+    <div class="travel-section-bg-container d-flex justify-content-center flex-column">
+      <div class="text-left content-spacing">
+        <p class="best-caption mb-4">BEST DESTINATIONS AROUND THE WORLD</p>
+        <h1 class="banner-heading mb-3">Travel, enjoy <br>and live a new <br>and full life</h1>
+        <p class="para-caption mb-4">Built Wicket longer admire do barton vanity itself do in it.<br>preferred to sportsmen</p>
+        <button class="custom-button">Find out more</button>
+        <button class="custom-outline-button play-button" onclick="playDemo()">
+          <i class="fas fa-play"></i> Play Demo
+        </button>
+      </div>
+    </div>
+    <div class="category-section pt-5 pb-5" id="categorySection">
+      <div class="container">
+        <h1 class="category-section-heading">Category</h1>
+        <p class="category-section-description">We Offer Best Services</p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3">
+            <div class="category-card p-3 mb-3">
+              <img src="pics/Group 18.png" class="category-card-image" />
+              <h1 class="category-card-title mt-3">Calculated Weather</h1>
+              <p class="category-card-description">
+                Built Wicket longer admire do barton vanity itself do in it
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="category-card p-3 mb-3">
+              <img src="pics/Group 19.png" class="category-card-image" />
+              <h1 class="category-card-title mt-3">Best Flights</h1>
+              <p class="category-card-description">
+                Engrossed listening. park gate sell they west hard for the
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="category-card p-3 mb-3">
+              <img src="pics/Group 20.png" class="category-card-image" />
+              <h1 class="category-card-title mt-3">Local Events</h1>
+              <p class="category-card-description">
+                Barton vanity itself do in it. prefered to men it engrossed
+                listening.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="category-card p-3 mb-3">
+              <img src="pics/Group 21.png" class="category-card-image" />
+              <h1 class="category-card-title mt-3">Customization</h1>
+              <p class="category-card-description">
+                We deliver outsourced aviation services for military customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- destinations section -->
+    
+    <div class="destinations-section pt-5 pb-5" id="destinationsSection">
+      <div class="container text-center">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <p>Top Selling</p>
+            <h1 class="destinations-heading">Top Destinations</h1>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow destinations-card p-3 mb-3">
+              <img
+                src="pics/rome.jpg"
+                class="destinations-image w-100"
+              />
+              <h1 class="destinations-title">Rome Italy</h1>
+              <p class="destinations-para">10 days Trip</p>
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow destinations-card p-3 mb-3">
+              <img
+                src="pics/italy.jpg"
+                class="destinations-image w-100"
+              />
+              <h1 class="destinations-title">London UK</h1>
+              <p class="destinations-para">10 days Trip</p>
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="destinations-card shadow p-3 mb-3">
+              <img
+                src="pics/Europe.jpg"
+                class="destinations-image w-100"
+              />
+              <h1 class="destinations-title">Full Europe</h1>
+              <p class="destinations-para">10 days Trip</p>
+              
+            </div>
+          </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- book trip section -->
+
+
+    <!-- <div class="book-trip-section pt-5 pb-5">
+      <div class="container ">
+        <div class="row text-left">
+          <div class="col-12 col-md-5">
+            <div class="text-left">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-7 text-left">
+            <h5 class="book-trip-section-para">Easy and Fast</h5>
+            <h1 class="book-trip-section-heading">
+              Book Your Next Trip
+              In 3 Easy Steps
+            </h1>
+            <h5 class="book-trip-section-para">Choose Destination</h5>
+            <p class="book-trip-section-description">
+              Lorem ipsum dolor it cmet consectur<br>
+              adipicing elit , urna totor tempus,
+            </p>
+
+            <h5 class="book-trip-section-para">Make Payment</h5>
+            <p class="book-trip-section-description">
+              Lorem ipsum dolor it cmet consectur<br>
+              adipicing elit , urna totor tempus,
+            </p>
+
+
+            <h5 class="book-trip-section-para">Reach Airport on Selected Date</h5>
+            <p class="book-trip-section-description">
+              Lorem ipsum dolor it cmet consectur<br>
+              adipicing elit , urna totor tempus,
+            </p>
+
+            
+                          </div>
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="booking pt-5 pb-5">
+      <div class="container">
+          <div class="row text-left">
+            <div class="col-12 col-md-5">
+              <div class="text-left">
+              </div>
+            </div>
+          <div class="bookingrow1">
+              <h5>Easy and Fast</h5>
+          </div>
+
+          <div class="bookingrow2">
+              <div class="bookingcol">
+                  <div class="bookingcard">
+                      <h1>Book Your Next Trip In 3 Easy Steps</h1>
+                      <div class="bookingcont">
+                          
+                          <h5>Choose Destination</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, torter tempus</p>
+                      </div>
+                      <div class="bookingcont">
+                        
+                          <h5>Choose Destination</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, torter tempus</p>
+                      </div>
+                      <div class="bookingcont">
+                       
+                        <h5>Choose Destination</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, torter tempus</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="bookingcol">
+                  <div class="bookingcard bookcard2">
+                    <img src="grees.avif" alt="" srcset="">
+                    <h4>Trip To Greece</h4>
+                    <h5>14-29 June| by Robbin Jhon</h5>
+                    <span><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-map"></i><i class="fa-solid fa-location-arrow"></i></span>
+                    <h5><i class="fa-solid fa-building-user"></i>24 people going</h5>
+                    <h6><i class="fa-regular fa-heart"></i></h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+<!-- testimonial section -->
+
+    <div class="testimonial-section pt-5 pb-5" id="testimonialSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <div class="text-center">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-7 order-2 order-md-1">
+            <p class="testimonial-description">
+              Testimonials
+            </p>
+            <h1 class="testimonial-heading">
+              What People Say <br>
+              About Us.
+            </h1>
+            
+            <p class="testimonial-paragraph">
+              “On the Windows talking painted pasture yet its
+               express parties use. Sure last upon he same as
+               knew next. Of believed or diverted no.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- logo-container -->
+    <div class="category-section pt-5 pb-5" id="logoSection">
+      <div class="container">
+        <div class="logo-container">
+          <a href="#" class="company-link" target="https://www.axon.com/" data-url="https://www.axon.com/">
+            <img src="pics/axon.png" alt="Company 1 Logo" class="company-logo">
+          </a>
+          <a href="#" class="company-link" target="https://www.jetstar.com" data-url="https://www.jetstar.com">
+            <img src="pics/jetstar.png" alt="Company 2 Logo" class="company-logo">
+          </a>
+          <a href="#" class="company-link" target="https://www.expedia.com" data-url="https://www.expedia.com">
+            <img src="pics/expedia.png" alt="Company 3 Logo" class="company-logo">
+          </a>
+          <a href="#" class="company-link" target="https://www.qantas.com" data-url="https://www.qantas.com">
+            <img src="pics/qantas.png" alt="Company 4 Logo" class="company-logo">
+          </a>
+          <a href="#" class="company-link" target="https://www.alitalia.com" data-url="https://www.alitalia.com">
+            <img src="pics/alitalia.png" alt="Company 4 Logo" class="company-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+<!-- subcribe -->
+
+    <div class="subscribe-section pt-5 pb-5" id="subscribeSection">
+      <div class="container text-center">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <h1 class="subscribe-heading">Subscribe to get information, latest news and other <br>
+              intresting offers about jadoo</h1>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="input-container">
+              <img src="pics/mail.png" alt="Mail Logo" class="logo">
+              <input type="text" placeholder="" class="inside">
+            <button class="button">Subscribe</button>
+             
+            </div>
+            
+            
+            
+          </div>
+          
+          
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Footer Section  -->
+         
+    <div class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="pics/logo.png"
+              class="jadoo-logo"
+            />
+            <h1 class="footer-section-mail-id">All rights reserved@jadoo.co</h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
