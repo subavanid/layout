@@ -1,22 +1,57 @@
-function changeLanguage(language) {
-    
-    console.log("Selected language: " + language);
-    
+
+function changeLanguage(lang) {
+ 
+  switch(lang) {
+      case 'en':
+         
+          alert("Language changed to English");
+          break;
+      case 'fr':
+          
+          alert("Language changed to French");
+          break;
+      case 'de':
+      
+          alert("Language changed to German");
+          break;
+      case 'es':
+          
+          alert("Language changed to Spanish");
+          break;
+      default:
+         
+          alert("Unsupported language");
+          break;
+  }
 }
+
+    var player; 
+
+  
+    function playDemo() {
+    
+        var videoId = 'YOUR_VIDEO_ID';
+        
+        player = new YT.Player('videoPlayer', {
+            height: '360',
+            width: '640',
+            videoId: videoId,
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo(); 
+    }
+
+
 
 
 
 
   
 
-  window.onload = function() {
-    var companyLinks = document.querySelectorAll(".company-link");
-    companyLinks.forEach(function(link) {
-      link.addEventListener("click", function(event) {
-        var url = this.getAttribute("data-url");
-        window.location.href = url;
-        event.preventDefault();
-      });
-    });
-  };
+
   

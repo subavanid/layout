@@ -7,6 +7,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="jadoo.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+
   </head>
   <body>
     <!-- nav bar display -->
@@ -27,11 +29,11 @@
               Destinations
               <span class="sr-only">(current)</span>
             </a>
-            <a class="nav-link" href="#exploreMenuSection" id="navItem2">Hotels</a>
+            <a class="nav-link" href="#hotelSection" id="navItem2">Hotels</a>
             <a class="nav-link" href="#testimonialSection" id="navItem3">Flights</a>
             <a class="nav-link" href="#logoSection" id="navItem4">Bookings</a>
-            <a class="nav-link" href="#LoginSection" id="navItem4">Login</a>
-            <a class="nav-link" href="#SignupSection" id="navItem4">Signup</a>
+            <a class="nav-link" href="#LoginSection" id="navItem5">Login</a>
+            <a class="nav-link" href="#SignupSection" id="navItem6">Signup</a>
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Language
@@ -48,6 +50,7 @@
     </nav>
     <!-- travel section -->
     <div class="travel-section-bg-container d-flex justify-content-center flex-column">
+      <div id="videoPlayer"></div>
       <div class="text-left content-spacing">
         <p class="best-caption mb-4">BEST DESTINATIONS AROUND THE WORLD</p>
         <h1 class="banner-heading mb-3">Travel, enjoy <br>and live a new <br>and full life</h1>
@@ -152,54 +155,9 @@
       </div>
     </div>
 
+<!-- booking -->
 
-<!-- book trip section -->
-
-
-    <!-- <div class="book-trip-section pt-5 pb-5">
-      <div class="container ">
-        <div class="row text-left">
-          <div class="col-12 col-md-5">
-            <div class="text-left">
-              
-            </div>
-          </div>
-          <div class="col-12 col-md-7 text-left">
-            <h5 class="book-trip-section-para">Easy and Fast</h5>
-            <h1 class="book-trip-section-heading">
-              Book Your Next Trip
-              In 3 Easy Steps
-            </h1>
-            <h5 class="book-trip-section-para">Choose Destination</h5>
-            <p class="book-trip-section-description">
-              Lorem ipsum dolor it cmet consectur<br>
-              adipicing elit , urna totor tempus,
-            </p>
-
-            <h5 class="book-trip-section-para">Make Payment</h5>
-            <p class="book-trip-section-description">
-              Lorem ipsum dolor it cmet consectur<br>
-              adipicing elit , urna totor tempus,
-            </p>
-
-
-            <h5 class="book-trip-section-para">Reach Airport on Selected Date</h5>
-            <p class="book-trip-section-description">
-              Lorem ipsum dolor it cmet consectur<br>
-              adipicing elit , urna totor tempus,
-            </p>
-
-            
-                          </div>
-
-
-            
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div id="booking pt-5 pb-5">
+    <div id="booking pt-5 pb-5" id="hotelSection">
       <div class="container">
           <div class="row text-left">
             <div class="col-12 col-md-5">
@@ -233,7 +191,7 @@
               </div>
               <div class="bookingcol">
                   <div class="bookingcard bookcard2">
-                    <img src="grees.avif" alt="" srcset="">
+                    <img src="pics/Europe.jpg" alt="" srcset="">
                     <h4>Trip To Greece</h4>
                     <h5>14-29 June| by Robbin Jhon</h5>
                     <span><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-map"></i><i class="fa-solid fa-location-arrow"></i></span>
@@ -247,33 +205,60 @@
 
 
 <!-- testimonial section -->
-
-    <div class="testimonial-section pt-5 pb-5" id="testimonialSection">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-5 order-1 order-md-2">
-            <div class="text-center">
-              
+<div class="testimonial-section pt-5 pb-5" id="testimonialSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-5 order-md-1"> 
+        <div class="testimonial-card text-center text-md-left">
+          <p class="bookingrow1">Testimonials</p>
+          <h1>What People Say <br>
+            About Us.</h1>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 order-md-2"> 
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-4 text-center">
+                            <div class="testimonial-card">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-user"></i> 
+                                </div>
+                                <p><br>“On the Windows talking painted pasture yet its<br>
+                                express parties use. Sure last upon he same as<br>
+                                knew next. Of believed or diverted no.”</p>
+                            </div>
+                        </div>
+                   
+                <div class="col-12 text-center">
+                  <div class="testimonial-card">
+                    <h5>Mike Taylor</h5>
+                    <p>Lahore, Pakistan</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          
           </div>
-          <div class="col-12 col-md-7 order-2 order-md-1">
-            <p class="testimonial-description">
-              Testimonials
-            </p>
-            <h1 class="testimonial-heading">
-              What People Say <br>
-              About Us.
-            </h1>
-            
-            <p class="testimonial-paragraph">
-              “On the Windows talking painted pasture yet its
-               express parties use. Sure last upon he same as
-               knew next. Of believed or diverted no.”
-            </p>
-          </div>
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+
+
     <!-- logo-container -->
     <div class="category-section pt-5 pb-5" id="logoSection">
       <div class="container">
@@ -309,10 +294,12 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <div class="input-container">
+
               <img src="pics/mail.png" alt="Mail Logo" class="logo">
+              <div class="subscribe">
               <input type="text" placeholder="" class="inside">
             <button class="button">Subscribe</button>
-             
+             </div>
             </div>
             
             
@@ -327,16 +314,64 @@
     </div>
 
 
-  <!-- Footer Section  -->
-         
-    <div class="footer-section pt-5 pb-5">
+ 
+
+    <footer class="footer footer-section pt-5 pb-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
-            <img
-              src="pics/logo.png"
-              class="jadoo-logo"
-            />
+          <div class="footer-col">
+            <h4>Jadoo.</h4>
+            <p>On the Windows talking pain<br>
+              express parties use. Sure last </p>
+           
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Mobile</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affilates</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>More</h4>
+            <ul>
+              <li><a href="#">Airlinefees</a></li>
+              <li><a href="#">Airline</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            
+            </ul>
+          </div>
+
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+   <div class="footer-section pt-5 pb-5  text-center">
+      <div class="container  text-center">
+        <div class="row text-center">
+          
             <h1 class="footer-section-mail-id">All rights reserved@jadoo.co</h1>
             
           </div>

@@ -1,5 +1,5 @@
 .jadoo-logo {
-  width: 80px;
+  width: 120px;
   height: 70px;
 }
 #navItem1 {
@@ -29,6 +29,23 @@
   color: #323842; 
 }
 #navItem4 {
+  color: Inter;
+  font-family: "Roboto";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842; 
+}
+
+#navItem5 {
+  color: Inter;
+  font-family: "Roboto";
+  word-spacing: 60px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #323842; 
+}
+#navItem6 {
   color: Inter;
   font-family: "Roboto";
   word-spacing: 60px;
@@ -210,31 +227,7 @@
 .destinations-card {
   border-radius: 16px;
 }
-/* .book-trip-section {
-  background-color: #f9fbfe;
-}
-.book-trip-img {
-  width: 270px;
-}
-.book-trip-section-heading {
-  color: #183b56;
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: 700;
-}
 
-.book-trip-section-para{
-  color: #5a7184;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.book-trip-section-description {
-  color: #5a7184;
-  font-family: "Roboto";
-  font-size: 16px;
-} */
 
 
 #booking{
@@ -308,7 +301,40 @@ h6{
 
 
 
-/* Testimonials Section */
+.testimonial-section {
+  background-color: #ffffff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.testimonial-card {
+  background-color: #ffffff; 
+  border: none; 
+  border-radius: none; 
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial-card h5 {
+  margin-bottom: 5px;
+  font-size: 18px; 
+}
+
+.testimonial-card p {
+  font-size: 16px; 
+}
+
+.bookingrow1 {
+  font-size: 18px; 
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+.testimonial-section h2 {
+  font-size: 32px; 
+  margin-bottom: 20px;
+}
+
 #testimonals{
   height: 100vh;
 }
@@ -316,9 +342,6 @@ h6{
 
 
 
-.delivery-and-payment-section {
-  background-color: white;
-}
 
 .testimonial-heading {
   color: #183b56;
@@ -354,6 +377,8 @@ h6{
 .subscribe-section{
   background-color: #F3F2F6;
   border-radius: 50px;
+  width: 80%;
+  margin: auto    ;
 }
 
 .subscribe-heading{
@@ -365,10 +390,26 @@ h6{
 
 }
 
+.subscribe{
+  display: flex;
+  justify-content: space-evenly ;
+}
+
+.subscribe input{
+padding: 0 90px  ;
+margin-right: 30px;
+}
+
+.subscribe button{
+  padding: 5px 20px;
+  border-radius: 15px;
+  border: none  ;
+}
+
 
 .input-container {
   position: relative;
-  width: 300px;
+  width: 200px;
 }
 
 .logo {
@@ -401,10 +442,105 @@ h6{
   font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
-  margin-top: 20px;
+  margin: 20px 0 0 470px;
 }
 .footer-section-address {
   color: #959ead;
   font-family: "Roboto";
   font-size: 14px;
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #ffffff;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer-col {
+  flex: 1; 
+  margin: 0; 
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    flex-basis: 50%; 
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    flex-basis: 100%; 
+  }
 }
